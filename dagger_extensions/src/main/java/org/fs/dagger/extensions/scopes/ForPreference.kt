@@ -13,11 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.common
+package org.fs.dagger.extensions.scopes
 
-import android.view.View
-import dagger.android.AndroidInjector
+import javax.inject.Scope
 
-interface HasViewInjector {
-  fun viewInjector(): AndroidInjector<View>
-}
+@Retention(AnnotationRetention.RUNTIME)
+@Scope
+annotation class ForPreference

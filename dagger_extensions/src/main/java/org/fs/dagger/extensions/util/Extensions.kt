@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.util
+package org.fs.dagger.extensions.util
 
 import android.app.Application
 import android.support.v7.preference.Preference
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import org.fs.dagger2.extensions.common.HasPreferenceInjector
-import org.fs.dagger2.extensions.common.HasRecyclerViewHolderInjector
-import org.fs.dagger2.extensions.common.HasViewInjector
+import org.fs.dagger.extensions.common.HasPreferenceInjector
+import org.fs.dagger.extensions.common.HasRecyclerViewHolderInjector
+import org.fs.dagger.extensions.common.HasViewInjector
 
 // we call this method in View#init
 fun View?.inject() {

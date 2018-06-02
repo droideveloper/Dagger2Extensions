@@ -13,12 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.keys
+package org.fs.dagger.extensions.common
 
-import android.support.v7.preference.Preference
-import dagger.MapKey
-import kotlin.reflect.KClass
+import android.support.v7.widget.RecyclerView
+import dagger.android.AndroidInjector
 
-@Target(AnnotationTarget.FUNCTION)
-@MapKey
-annotation class ViewKey(val value: KClass<Preference>)
+interface HasRecyclerViewHolderInjector {
+  fun recyclerViewHolderInjector(): AndroidInjector<RecyclerView.ViewHolder>
+}

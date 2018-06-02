@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions
+package org.fs.dagger.extensions
 
 import android.support.v7.preference.Preference
 import android.support.v7.widget.RecyclerView
@@ -21,9 +21,9 @@ import android.view.View
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.DaggerApplication
-import org.fs.dagger2.extensions.common.HasPreferenceInjector
-import org.fs.dagger2.extensions.common.HasRecyclerViewHolderInjector
-import org.fs.dagger2.extensions.common.HasViewInjector
+import org.fs.dagger.extensions.common.HasPreferenceInjector
+import org.fs.dagger.extensions.common.HasRecyclerViewHolderInjector
+import org.fs.dagger.extensions.common.HasViewInjector
 
 abstract class Dagger2ExtensionsApplication: DaggerApplication(), HasViewInjector, HasRecyclerViewHolderInjector, HasPreferenceInjector {
 

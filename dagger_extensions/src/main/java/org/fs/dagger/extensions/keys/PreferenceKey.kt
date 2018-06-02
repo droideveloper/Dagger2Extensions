@@ -13,10 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.scopes
+package org.fs.dagger.extensions.keys
 
-import javax.inject.Scope
+import android.support.v7.preference.Preference
+import dagger.MapKey
+import kotlin.reflect.KClass
 
-@Retention(AnnotationRetention.RUNTIME)
-@Scope
-annotation class ForPreference
+@Target(AnnotationTarget.FUNCTION)
+@MapKey
+annotation class PreferenceKey(val value: KClass<Preference>)

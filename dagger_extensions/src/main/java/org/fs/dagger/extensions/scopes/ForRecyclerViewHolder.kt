@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.keys
+package org.fs.dagger.extensions.scopes
 
-import android.support.v7.widget.RecyclerView
-import dagger.MapKey
-import kotlin.reflect.KClass
+import javax.inject.Scope
 
-@Target(AnnotationTarget.FUNCTION)
-@MapKey
-annotation class RecyclerViewHolderKey(val value: KClass<RecyclerView.ViewHolder>)
+@Retention(AnnotationRetention.RUNTIME)
+@Scope
+annotation class ForRecyclerViewHolder

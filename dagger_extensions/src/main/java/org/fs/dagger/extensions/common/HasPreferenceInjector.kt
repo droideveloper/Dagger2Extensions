@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.fs.dagger2.extensions.common
+package org.fs.dagger.extensions.common
 
 import android.support.v7.preference.Preference
 import dagger.android.AndroidInjector
