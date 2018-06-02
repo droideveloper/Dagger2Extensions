@@ -36,7 +36,7 @@ android {
 ext {
   PUBLISH_DEPENDENCIES_VERSION = '1.2'
   PUBLISH_GROUP_ID = 'org.fs.dagger.extensions'
-  PUBLISH_ARTIFACT_ID = 'dagger_extensions'
+  PUBLISH_ARTIFACT_ID = 'dagger-extensions'
   PUBLISH_VERSION = '0.0.1'
 }
 
