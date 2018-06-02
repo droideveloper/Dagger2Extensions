@@ -6,6 +6,7 @@ apply plugin: 'kotlin-kapt'
 apply from: '../dependencies.gradle'
 
 android {
+
   compileSdkVersion 27
 
   defaultConfig {
@@ -31,4 +32,13 @@ android {
     targetCompatibility JavaVersion.VERSION_1_8
   }
 }
+
+ext {
+  PUBLISH_DEPENDENCIES_VERSION = '1.2'
+  PUBLISH_GROUP_ID = 'org.fs.dagger2.extensions'
+  PUBLISH_ARTIFACT_ID = 'dagger2_extensions'
+  PUBLISH_VERSION = '0.0.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 

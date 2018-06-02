@@ -1,18 +1,23 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+
 buildscript {
   ext.gradleVersion = '3.1.2'
   ext.kotlinVersion = '1.2.40'
   ext.dagger2Version = '2.14.1'
   ext.supportVersion = '27.1.1'
+  ext.dependenciesVersion = '1.2'
 
   repositories {
     google()
     jcenter()
   }
+
   dependencies {
     classpath "com.android.tools.build:gradle:$gradleVersion"
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$dependenciesVersion"
+    classpath "com.github.dcendents:android-maven-plugin:$dependenciesVersion"
    }
 }
 
