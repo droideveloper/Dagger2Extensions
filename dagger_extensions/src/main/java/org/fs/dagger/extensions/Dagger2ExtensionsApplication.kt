@@ -24,12 +24,13 @@ import dagger.android.support.DaggerApplication
 import org.fs.dagger.extensions.common.HasPreferenceInjector
 import org.fs.dagger.extensions.common.HasRecyclerViewHolderInjector
 import org.fs.dagger.extensions.common.HasViewInjector
+import javax.inject.Inject
 
 abstract class Dagger2ExtensionsApplication: DaggerApplication(), HasViewInjector, HasRecyclerViewHolderInjector, HasPreferenceInjector {
 
-  private lateinit var viewInjector: DispatchingAndroidInjector<View>
-  private lateinit var recyclerViewHolderInjector: DispatchingAndroidInjector<RecyclerView.ViewHolder>
-  private lateinit var preferenceInjector: DispatchingAndroidInjector<Preference>
+  @Inject lateinit var viewInjector: DispatchingAndroidInjector<View>
+  @Inject lateinit var recyclerViewHolderInjector: DispatchingAndroidInjector<RecyclerView.ViewHolder>
+  @Inject lateinit var preferenceInjector: DispatchingAndroidInjector<Preference>
 
   override fun viewInjector(): AndroidInjector<View> = viewInjector
   override fun recyclerViewHolderInjector(): AndroidInjector<RecyclerView.ViewHolder> = recyclerViewHolderInjector

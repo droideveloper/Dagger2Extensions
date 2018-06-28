@@ -13,7 +13,7 @@ android {
     minSdkVersion 16
     targetSdkVersion 27
     versionCode 1
-    versionName "0.0.1"
+    versionName "0.0.2"
   }
 
   buildTypes {
@@ -37,7 +37,7 @@ ext {
   PUBLISH_DEPENDENCIES_VERSION = '1.2'
   PUBLISH_GROUP_ID = 'org.fs.dagger.extensions'
   PUBLISH_ARTIFACT_ID = 'dagger-extensions'
-  PUBLISH_VERSION = '0.0.1'
+  PUBLISH_VERSION = '0.0.2'
 }
 
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'

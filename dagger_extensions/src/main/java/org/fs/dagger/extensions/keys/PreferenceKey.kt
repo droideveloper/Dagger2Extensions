@@ -20,5 +20,6 @@ import dagger.MapKey
 import kotlin.reflect.KClass
 
 @Target(AnnotationTarget.FUNCTION)
+@Retention(AnnotationRetention.RUNTIME)
 @MapKey
-annotation class PreferenceKey(val value: KClass<Preference>)
+annotation class PreferenceKey(val value: KClass<out Preference>)

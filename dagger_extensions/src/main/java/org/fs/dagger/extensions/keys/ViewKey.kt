@@ -15,10 +15,11 @@
  */
 package org.fs.dagger.extensions.keys
 
-import android.support.v7.preference.Preference
+import android.view.View
 import dagger.MapKey
 import kotlin.reflect.KClass
 
 @Target(AnnotationTarget.FUNCTION)
+@Retention(AnnotationRetention.RUNTIME)
 @MapKey
-annotation class ViewKey(val value: KClass<Preference>)
+annotation class ViewKey(val value: KClass<out View>)
